@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			* {
+				touch-action: none;
+			}
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+				width:91px;
+				border: 1px solid transparent;
+			}
+			
+			.mui-off-canvas-left .mui-scroll .mui-grid-view.mui-grid-9 .mui-table-view-cell {
+				font-size: 12px;
+				margin-left: 10px;
+			}
+			
+			.mui-table-view-cell {
+				padding: 14px 15px;
+				font-size: 14px;
+			}
+			
+			.mui-table-view-cell:after {
+				content: '';
+				background-color: transparent !important;
+			}
+			
+		
+			
+			
+		
+		
+		</style>
+	</head>
+
+	<body>
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav" style="background-color: #007AFF">
+					
+					<a class="mui-icon mui-icon-plus mui-icon mui-icon-search" href="#offCanvasSide"></a>
+					<h1 class="mui-title" style="color:#FFFFFF;" id="title">奥林匹克参林公园</h1>
+					<span style="float: right;margin-top: 11px;color:#FFFFFF;">注册|登陆</span>
+				</header>
+
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#page1">
+						<span class="mui-icon mui-icon-chatbubble"></span>
+						<span class="mui-tab-label">外卖</span>
+						
+					</a>
+					<a class="mui-tab-item" href="#page2">
+						<span class="mui-icon mui-icon-personadd"></span>
+						<span class="mui-tab-label">搜索</span>
+					</a>
+					<a class="mui-tab-item" href="#page3">
+						<span class="mui-icon mui-icon-minus"></span>
+						<span class="mui-tab-label">订单</span>
+					</a>
+					<a class="mui-tab-item" href="#page4">
+						<span class="mui-icon mui-icon-person"></span>
+						<span class="mui-tab-label">我的</span>
+					</a>
+				</nav>
+				<!-- 主页面内容容器 -->
+				<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 主界面具体展示内容 -->
+						<div class="mui-content">
+							<div id="page1" class="mui-control-content mui-active">
+								<div class="lunbo" >
+									<ul class="mui-table-view mui-grid-view mui-grid-9" style="width: 100%;height:230px;background-color: #FFFFFF;">
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-home" style="width:50px;height:50px;background-color: red;border-radius: 50%;"></span>
+												<div class="mui-media-body">甜品饮品</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-email" style="width:50px;height:50px;background-color: red;border-radius: 50%;"><span class="mui-badge mui-badge-red">5</span></span>
+												<div class="mui-media-body">商超便利</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-chatbubble" style="width:50px;height:50px;background-color: red;border-radius: 50%;"></span>
+												<div class="mui-media-body">美食</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-location" style="width:50px;height:50px;background-color: red;border-radius: 50%;"></span>
+												<div class="mui-media-body">新店特惠</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-search" style="width:50px;height:50px;background-color: red;border-radius: 50%;"></span>
+												<div class="mui-media-body">简餐</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-search" style="width:50px;height:50px;background-color: red;border-radius: 50%;"></span>
+												<div class="mui-media-body">准时达</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-search" style="width:50px;height:50px;background-color: red;border-radius: 50%;"></span>
+												<div class="mui-media-body">预订早餐</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+											<a href="#">
+												<span class="mui-icon mui-icon-search" style="width:50px;height:50px;background-color: red;border-radius: 50%;"></span>
+												<div class="mui-media-body">土豪推荐</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="fujin" style="width:100%;height:331px; margin:0 auto;background-color:#FFFFFF;margin-top: 10px;overflow: hidden;overflow-y:auto;">
+									
+									<div id="fujin-zi">
+										<img src="images/shangjia-1.png" style="widht:30px;height:30px;float:left;padding-left:2px;"/>
+										<span id="fujin-zi-1" style="color:#00000;;font-size: 20px;padding-left: 15px;">
+											附近商家
+										</span>
+									</div>
+									<!--商家-->
+									<ul class="mui-table-view" style="margin-top:10px;">
+									    <li class="mui-table-view-cell mui-media">
+									        <a href="javascript:;">
+									            <img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+									            <div class="mui-media-body">
+									                <span style="width:15px;height:10px;background-color: #FFFF00;">品牌</span>
+									                <span style="color:#000000;font-size: 16px;padding-left:9px;font-weight:300;">黄焖鸡</span>
+									                <span style="float:right;">保 准 票</span>
+									                <p style="margin-top: 5px;">月售106单</p>
+									                <span style="width: 60px;height: 20px;background-color: #0062CC;float: right;font-size: 14px;color: #ffff; margin-top: -18px;">蜂鸟转送</span>
+									                <span style="width: 48px;height: 20px;margin-right:6px;background-color: #FFFFFF;border:1px solid #0062CC; float: right;font-size: 14px;color: #ffff; margin-top: -18px;">准时达</span>
+									                <p class='mui-ellipsis' style="margin-top:12px;">￥20起送 /配送费约￥5</p>
+									                <p style="float:right;font-size: 11px; margin-top: -20px;">103.6公里 / 22小时26分钟</p>
+									            </div>
+									        </a>
+									    </li>
+									    <li class="mui-table-view-cell mui-media">
+									        <a href="javascript:;">
+									            <img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+									            <div class="mui-media-body">
+									                <span style="width:15px;height:10px;background-color: #FFFF00;">品牌</span>
+									                <span style="color:#000000;font-size: 16px;padding-left:9px;font-weight:300;">黄焖鸡</span>
+									                <span style="float:right;">保 准 票</span>
+									                <p style="margin-top: 5px;">月售106单</p>
+									                <span style="width: 60px;height: 20px;background-color: #0062CC;float: right;font-size: 14px;color: #ffff; margin-top: -18px;">蜂鸟转送</span>
+									                <span style="width: 48px;height: 20px;margin-right:6px;background-color: #FFFFFF;border:1px solid #0062CC; float: right;font-size: 14px;color: #ffff; margin-top: -18px;">准时达</span>
+									                <p class='mui-ellipsis' style="margin-top:12px;">￥20起送 /配送费约￥5</p>
+									                <p style="float:right;font-size: 11px; margin-top: -20px;">103.6公里 / 22小时26分钟</p>
+									            </div>
+									        </a>
+									    </li>
+									    <li class="mui-table-view-cell mui-media">
+									        <a href="javascript:;">
+									            <img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+									            <div class="mui-media-body">
+									                <span style="width:15px;height:10px;background-color: #FFFF00;">品牌</span>
+									                <span style="color:#000000;font-size: 16px;padding-left:9px;font-weight:300;">黄焖鸡</span>
+									                <span style="float:right;">保 准 票</span>
+									                <p style="margin-top: 5px;">月售106单</p>
+									                <span style="width: 60px;height: 20px;background-color: #0062CC;float: right;font-size: 14px;color: #ffff; margin-top: -18px;">蜂鸟转送</span>
+									                <span style="width: 48px;height: 20px;margin-right:6px;background-color: #FFFFFF;border:1px solid #0062CC; float: right;font-size: 14px;color: #ffff; margin-top: -18px;">准时达</span>
+									                <p class='mui-ellipsis' style="margin-top:12px;">￥20起送 /配送费约￥5</p>
+									                <p style="float:right;font-size: 11px; margin-top: -20px;">103.6公里 / 22小时26分钟</p>
+									            </div>
+									        </a>
+									    </li>
+									    <li class="mui-table-view-cell mui-media">
+									        <a href="javascript:;">
+									            <img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+									            <div class="mui-media-body">
+									                <span style="width:15px;height:10px;background-color: #FFFF00;">品牌</span>
+									                <span style="color:#000000;font-size: 16px;padding-left:9px;font-weight:300;">黄焖鸡</span>
+									                <span style="float:right;">保 准 票</span>
+									                <p style="margin-top: 5px;">月售106单</p>
+									                <span style="width: 60px;height: 20px;background-color: #0062CC;float: right;font-size: 14px;color: #ffff; margin-top: -18px;">蜂鸟转送</span>
+									                <span style="width: 48px;height: 20px;margin-right:6px;background-color: #FFFFFF;border:1px solid #0062CC; float: right;font-size: 14px;color: #ffff; margin-top: -18px;">准时达</span>
+									                <p class='mui-ellipsis' style="margin-top:12px;">￥20起送 /配送费约￥5</p>
+									                <p style="float:right;font-size: 11px; margin-top: -20px;">103.6公里 / 22小时26分钟</p>
+									            </div>
+									        </a>
+									    </li>
+									    <li class="mui-table-view-cell mui-media">
+									        <a href="javascript:;">
+									            <img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+									            <div class="mui-media-body">
+									                <span style="width:15px;height:10px;background-color: #FFFF00;">品牌</span>
+									                <span style="color:#000000;font-size: 16px;padding-left:9px;font-weight:300;">黄焖鸡</span>
+									                <span style="float:right;">保 准 票</span>
+									                <p style="margin-top: 5px;">月售106单</p>
+									                <span style="width: 60px;height: 20px;background-color: #0062CC;float: right;font-size: 14px;color: #ffff; margin-top: -18px;">蜂鸟转送</span>
+									                <span style="width: 48px;height: 20px;margin-right:6px;background-color: #FFFFFF;border:1px solid #0062CC; float: right;font-size: 14px;color: #ffff; margin-top: -18px;">准时达</span>
+									                <p class='mui-ellipsis' style="margin-top:12px;">￥20起送 /配送费约￥5</p>
+									                <p style="float:right;font-size: 11px; margin-top: -20px;">103.6公里 / 22小时26分钟</p>
+									            </div>
+									        </a>
+									    </li>
+									    <li class="mui-table-view-cell mui-media">
+									        <a href="javascript:;">
+									            <img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+									            <div class="mui-media-body">
+									                <span style="width:15px;height:10px;background-color: #FFFF00;">品牌</span>
+									                <span style="color:#000000;font-size: 16px;padding-left:9px;font-weight:300;">黄焖鸡</span>
+									                <span style="float:right;">保 准 票</span>
+									                <p style="margin-top: 5px;">月售106单</p>
+									                <span style="width: 60px;height: 20px;background-color: #0062CC;float: right;font-size: 14px;color: #ffff; margin-top: -18px;">蜂鸟转送</span>
+									                <span style="width: 48px;height: 20px;margin-right:6px;background-color: #FFFFFF;border:1px solid #0062CC; float: right;font-size: 14px;color: #ffff; margin-top: -18px;">准时达</span>
+									                <p class='mui-ellipsis' style="margin-top:12px;">￥20起送 /配送费约￥5</p>
+									                <p style="float:right;font-size: 11px; margin-top: -20px;">103.6公里 / 22小时26分钟</p>
+									            </div>
+									        </a>
+									    </li>
+									</ul>
+								</div>
+   
+							</div>
+							<div id="page2" class="mui-control-content">
+								<div id="sousuo" style="width:73%;height:30px;margin-left: 12px;;">
+									<input id="shuru" type="text" value="&nbsp;&nbsp;请输入商家或美食名称">
+									<button style="width: 25%;height: 40px;float: right;margin-top: 0px;color:#FFFFFF;background-color:#0062CC;margin-right: -74px;">提交</button>
+									
+								</div>
+							</div>
+							<div id="page3" class="mui-control-content"> 
+								
+							</div>
+							<div id="page4" class="mui-control-content"> 
+								<ul class="mui-table-view">
+								    <li class="mui-table-view-cell mui-media" style="width:100%;height: 100px;">
+								        <a href="javascript:;">
+								            <img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+								            <div class="mui-media-body">
+								                 	<p style="font-size: 19px;">登陆/注册</p>
+								                <p class='mui-ellipsis' style="font-size: 17px;margin-top: 24px;">暂无绑定手机号码</p>
+								            </div>
+								        </a>
+								    </li>
+								</ul>
+								<div class="shuzi" style="width:100%;height:100px;border:1px solid #000000;">
+									<div class="shuzi-1" style="width:33%;height:100px;float: left;background-color: #FFFFFF;">
+										<p style="color:orange;font-size: 21px;text-align: center;line-height: 68px;">0.00元</p>
+										<p style="color:#000000;text-align: center;margin-top: -23px;">我的余额</p>
+									</div>
+									<div class="shuzi-1" style="width:33%;height:100px;float: left;background-color: #FFFFFF;margin-left: 1.5px;">
+										<p style="color:orange;font-size: 21px;text-align: center;line-height: 68px;">0个</p>
+										<p style="color:#000000;text-align: center;margin-top: -23px;">我的优惠</p>
+									</div>
+									<div class="shuzi-1" style="width:33%;height:100px;float: left;background-color: #FFFFFF;margin-left: 1.5px;">
+										<p style="color:orange;font-size: 21px;text-align: center;line-height: 68px;">0分</p>
+										<p style="color:#000000;text-align: center;margin-top: -23px;">我的积分</p>
+									</div>
+								</div>
+								<div id="er" style="width:100%;height:150px;background-color: #2AC845;margin-top: 10px;">
+									<ul class="mui-table-view">
+									    <li class="mui-table-view-cell">
+									        <a class="mui-navigate-right">我的订单</a>
+									    </li>
+									    <li class="mui-table-view-cell">
+									        <a class="mui-navigate-right">积分商城</a>
+									    </li>
+									    <li class="mui-table-view-cell">
+									        <a class="mui-navigate-right">饿了么会员卡</a>
+									    </li>
+									</ul>
+								</div>
+								<div id="er" style="width:100%;height:150px;margin-top: 20px;">
+									<ul class="mui-table-view">
+									    <li class="mui-table-view-cell">
+									        <a class="mui-navigate-right">服务中心</a>
+									    </li>
+									    <li class="mui-table-view-cell">
+									        <a class="mui-navigate-right">下载饿了么APP</a>
+									    </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			var subpages = ['subView/#page1.html',
+				'subView/contact.html',
+				'subView/email.html',
+				'subView/setting.html'
+			];
+			var subpageStyle = {
+				top: '45px',
+				bottom: '51px'
+			};
+			mui.plusReady(function() {
+				var self = plus.webview.currentWebview();
+				for(var i = 0; i < subpages.length; i++) {
+					var sub = plus.webview.create(subpages[i], subpages[i], subpageStyle);
+					self.append(sub);
+				}
+				//设置状态栏的背景颜色
+				plus.navigator.setStatusBarBackground('#000000');
+
+				//设置系统状态栏样式 (可选值:dark,light,UIStatusBarStyleDefault,UIStatusBarStyleBlackOpaque)
+				plus.navigator.setStatusBarStyle('dark');
+
+				plus.webview.show(subpages[0]);
+			});
+
+			mui('.mui-bar-tab').on('tap', 'a', function(e) {
+				var tabId = this.getAttribute('id');
+				var title = document.getElementById("title");
+				title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
+				for(i = 0; i < 4; i++) {
+					plus.webview.hide(subpages[i]);
+				}
+				switch(tabId) {
+					case 'page1':
+						if(mui.os.ios) {
+							plus.webview.show(subpages[0]);
+						} else {
+							plus.webview.show(subpages[0], "fade-in", 300);
+						}
+						break;
+					case 'page2':
+						if(mui.os.ios) {
+							plus.webview.show(subpages[1]);
+						} else {
+							plus.webview.show(subpages[1], "fade-in", 300);
+						}
+						break;
+					case 'page3':
+						if(mui.os.ios) {
+							plus.webview.show(subpages[2]);
+						} else {
+							plus.webview.show(subpages[2], "fade-in", 300);
+						}
+						break;
+					case 'page4':
+						if(mui.os.ios) {
+							plus.webview.show(subpages[3]);
+						} else {
+							plus.webview.show(subpages[3], "fade-in", 300);
+						}
+						break;
+					default:
+						break;
+				}
+			})
+		</script>
+
+	</body>
+
+</html>
