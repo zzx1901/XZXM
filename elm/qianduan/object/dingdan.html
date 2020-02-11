@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			body{
+				background: #f5f5f5;
+			}
+			#nav{
+				width:100%;
+				height: 50px;
+				background:#3190e8;
+			}
+			#nav span{
+				color:white;
+				font-weight: bold;
+				font-size: 28px;
+				line-height: 50px;
+			}
+			#nav span:nth-child(1){
+				margin-left: 5%;
+			}
+			#nav span:nth-child(2){
+				margin-left: 35%;
+			}
+			#top{
+				width:100%;
+				height: 80px;
+				background: white;
+			}
+			#top input{
+				width:70%;
+				margin-top:20px;
+				margin-left: 5%;
+			}
+			#top button{
+				background: #3190e8;
+				margin-top: 20px;
+				height: 40px;
+			}
+			#bottom{
+				width:100%;
+				height: 70px;
+				background: white;
+				position: absolute;
+				bottom:0;
+			}
+			#bottom div{
+				float:left;
+				margin-left: 14%;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="nav">
+			<span id="fanhui"><</span>
+			<span>订单</span>
+		</div>
+		<div id="bottom">
+			<div>
+				<span class="mui-icon mui-icon-home"></span>
+				<p>外卖</p>
+			</div>
+			<div id="sousuo">
+				<span class="mui-icon mui-icon-spinner mui-spin"></span>
+				<p>搜索</p>
+			</div>
+			<div id="dingdan">
+				<span class="mui-icon mui-icon-bars"></span>
+				<p>订单</p>
+			</div>
+			<div id="me">
+				<span class="mui-icon mui-icon-person"></span>
+				<p>我的</p>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			 document.getElementById('sousuo').addEventListener('tap', function() {
+		       //打开关于页面
+		       mui.openWindow({
+		         url: 'sousuo.html', 
+		         id:'info'
+		       });
+		     }); 
+		      document.getElementById('me').addEventListener('tap', function() {
+		       //打开关于页面
+		       mui.openWindow({
+		         url: 'me.html', 
+		         id:'info'
+		       });
+		     });  
+		      document.getElementById('fanhui').addEventListener('tap', function() {
+		       //打开关于页面
+		       mui.openWindow({
+		         url: 'index.html', 
+		         id:'info'
+		       });
+		     });  
+		</script>
+	</body>
+
+</html>

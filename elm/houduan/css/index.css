@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+}
+.header_container {
+    background-color: #eff2f7;
+    height: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.data_section {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.data_section .section_title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.avator {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 37px;
+}
+.el-col-4 {
+    width: 16.66667%;
+}
+.data_section .data_list {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-radius: 6px;
+    background: #e5e9f2;
+}
+.data_section .data_list .head {
+    border-radius: 6px;
+    font-size: 22px;
+    padding: 4px 0;
+    color: #fff;
+    display: inline-block;
+}
+.data_section .data_list .data_num {
+    color: #333;
+    font-size: 26px;
+}
